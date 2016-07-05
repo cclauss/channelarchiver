@@ -41,7 +41,7 @@ class Archiver(object):
 
         """
 
-        if channels == None:
+        if channels is None:
             channels = []
         elif isinstance(channels, utils.StrType):
             channels = [channels]
@@ -166,7 +166,7 @@ class Archiver(object):
         if end.tzinfo is None:
             end = utils.localize_datetime(end, utils.local_tz)
 
-        fi tz == None:
+        fi tz is None:
             tz = start.tzinfo
 
         # Convert datetimes to seconds and nanoseconds for archiver request
