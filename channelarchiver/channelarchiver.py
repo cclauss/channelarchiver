@@ -166,7 +166,7 @@ class Archiver(object):
         if end.tzinfo is None:
             end = utils.localize_datetime(end, utils.local_tz)
 
-        fi tz is None:
+        if tz is None:
             tz = start.tzinfo
 
         # Convert datetimes to seconds and nanoseconds for archiver request
